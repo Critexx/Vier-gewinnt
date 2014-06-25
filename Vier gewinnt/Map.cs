@@ -33,15 +33,15 @@ namespace Vier_gewinnt
             int LocationEndX = LocationX + FieldCountX * FieldSize;
             int LocationEndY = LocationY + FieldCountY * FieldSize;
 
-            // Zeichnet die Y Reihe  
+            // Zeichnet die X Reihe  
             for (int i = 0; i < FieldCountY+1; i++)
             {
-                formGraphic.DrawLine(PenPlayground, LocationX, LocationX + i * FieldSize, LocationEndX, LocationX + i * FieldSize);              
+                formGraphic.DrawLine(PenPlayground, LocationX, LocationY + i * FieldSize, LocationEndX, LocationY + i * FieldSize);              
             }
-            // Zeichnet die X Reihe
+            // Zeichnet die Y Reihe
             for (int i = 0; i < FieldCountX+1; i++)
             {
-                formGraphic.DrawLine(PenPlayground, LocationX + i * FieldSize, LocationX, LocationX + i * FieldSize, LocationEndY);
+                formGraphic.DrawLine(PenPlayground, LocationX + i * FieldSize, LocationY, LocationX + i * FieldSize, LocationEndY);
             }
         }
 

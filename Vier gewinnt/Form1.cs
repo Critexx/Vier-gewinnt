@@ -21,7 +21,7 @@ namespace Vier_gewinnt
         private void btnNewGame_Click(object sender, EventArgs e)
         {
             GameHandler = new GameHandler();
-            GameHandler.NewGame(this, 7, 6, 70, 100, 100);
+            GameHandler.NewGame(this, 7, 6, 70, 155, 100);
             label1.Visible = false;
             label1.Text = "Gewinn Label";
             label3.Text = "Rot";
